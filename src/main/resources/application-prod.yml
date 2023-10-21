@@ -1,0 +1,14 @@
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: WARN
+    org.springframework.boot: WARN
+    nl.infodation.kikker.p4.cxf: WARN
+  config: classpath:logback-prod.xml
+
+application:
+  datasource:
+    uri: mongodb+srv://%s:%s@cluster0.j0abl.mongodb.net/test
+    database: kb-tool-service
+    user: secret-user
+    pwd: secret-password

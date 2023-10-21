@@ -1,0 +1,15 @@
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.boot: INFO
+    org.springframework.data.mongodb.core:
+              MongoTemplate: DEBUG
+  config: classpath:logback-uat.xml
+
+application:
+  datasource:
+    uri: mongodb+srv://%s:%s@cluster0.j0abl.mongodb.net/test
+    database: kb-tool-service
+    user: secrect-user
+    pwd: secrect-password
